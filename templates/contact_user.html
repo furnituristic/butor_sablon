@@ -1,0 +1,19 @@
+{% extends '_base_options.html' %}
+
+{% block title %}contact{%endblock title%}
+
+{% block body %}
+    <div>
+        <form method="post" >
+                {% csrf_token %}
+                <div class="user_input">
+                    <div class="dim">{{form.dim1}}</div>
+                    <div class="dim">{{form.dim2}}</div>
+                    <div class="dim">{{form.dim3}}</div>
+                </div>
+            <div>{{form.message}}</div>
+
+                <button type="submit" class="button">Generálás</button>
+        </form>
+    </div>
+{% endblock body %}
