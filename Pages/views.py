@@ -27,13 +27,16 @@ def contact_user(request):
 
             butor_1 = xlsxwriter.Workbook('butor_data.xlsx')
             worksheet = butor_1.add_worksheet()
-            worksheet.write(0,0, dim1)
-            worksheet.write(1,0, dim2)
-            worksheet.write(2,0, dim3)
+            worksheet.write(0, 0, dim1)
+            worksheet.write(1, 0, dim2)
+            worksheet.write(2, 0, dim3)
             butor_1.close()
 
         #return redirect("home")
     context = {"form": form}
     return render(request, 'contact_user.html', context)
+
+def stilus_proba(request):
+    return render(request, 'stilus_proba.html')
 
 
