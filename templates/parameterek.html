@@ -1,0 +1,26 @@
+{% extends '_base_options.html' %}
+
+{% block title %}About{%endblock title%}
+
+{% block body %}
+    <h1>Paraméterek</h1></br>
+    <p>
+        Kérlek írd be a kívánt paramétereket!
+    </p></br>
+    <div>
+        <form method="post" >
+                {% csrf_token %}
+                <div class="user_input">
+                    <div class="dim">{{form.dim1}}</div>
+                    <div class="dim">{{form.dim2}}</div>
+                    <div class="dim">{{form.dim3}}</div>
+                    <div class="dim">{{form.dim4}}</div>
+                    <div class="dim">{{form.dim5}}</div>
+                    <div class="dim">{{form.dim6}}</div>
+                </div>
+            
+                <button type="submit" class="button">Generálás</button>
+        </form>
+    </div>
+
+{% endblock body %}

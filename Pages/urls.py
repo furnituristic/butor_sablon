@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home_page, kapcsolat, about, velemeny, contact_user, stilus_proba
+from .views import home_page, kapcsolat, about, velemeny, contact_user, stilus_proba, parameterek
 
 urlpatterns = [
     path('', home_page, name="home"),
@@ -8,5 +8,6 @@ urlpatterns = [
     path('contact/', kapcsolat, name="contact"),
     path('about/', about, name="about"),
     path('stilus_proba/', stilus_proba, name="stilus_proba"),
+    path('parameterek/', parameterek, name="parameterek"),
 
 ]
