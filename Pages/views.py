@@ -3,6 +3,7 @@ from .forms import ContactForm, ContactForm_Adam
 import xlsxwriter
 import dropbox
 
+#FELTOLTO ELEJE
 class TransferData: #létrehozom a TransferData osztályt
     def __init__(self, access_token):
         self.access_token = access_token
@@ -22,6 +23,7 @@ def main():
  
     # API v2
     transferData.upload_file(file_from, file_to)
+#FELTOLTO VEGE
 
 def home_page(request):
     return render(request, 'home_page.html')
