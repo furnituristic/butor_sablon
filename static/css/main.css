@@ -12,8 +12,10 @@
 body{
        font-size: 12px;
        background-color: rgb(0,43, 73);
-       color: white;
+       color: black;
        font-family: 'Noto Sans JP';
+       background: #FFFFFF url("https://previews.dropbox.com/p/thumb/AAzvno9MOkoMp5gjPTwxe2DGiGIRMVQcK43lWmCR6rx7Z5x8_mzq627_vmCNAJjqZcM4_d-bLfw6j0T0kB_QjugIJk2H3PiiZl6l-gnwBEOgidNtEKkaPlqhe2Mmom3JXKZJbMW7dzBXbJD3GeaIVGLIVE90qPm3K9zIhGobmcTs9IMYavOyUtoBEkeRVtDF5XxNLmAJvq2aESaVgfSQ9B8tOhh8Z9-LyvZiIRWAVZPLdIs3cy0gAdtceL2b7POePhNa0bBAx-NQ-dSU5Hff-g25jF10Bsh6kmoBHJ4dJkV5aEqBqIfRphRQrTidi3g87iyKgohuuC5XN_LUuGiCORalzNjbuV5KTHurRTnsEebyNw/p.png") no-repeat fixed 50% 0%;
+       background-size: 100%;
 }
 
 p{
